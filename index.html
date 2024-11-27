@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume About Me</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #205d76;
+            background-color: #205d76;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #205d76, #76c7c0);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            font-size: 1rem;
+        }
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 50px 20px;
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .hero h2 {
+            color: #1a91c4;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+        .hero .btn {
+            padding: 10px 20px;
+            color: white;
+            background: #205d76;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .hero .btn:hover {
+            background: #205d76;
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 50px 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            text-align: center;
+            color: #205d76;
+            margin-bottom: 20px;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .skills ul li {
+            background: #f3f4f6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+        }
+
+        /* Experience and Education */
+        .timeline {
+            padding: 20px;
+            border-left: 3px solid #205d76;
+            position: relative;
+        }
+        .timeline .event {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .timeline .event h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        .timeline .event p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .timeline .event::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -8px;
+            width: 15px;
+            height: 15px;
+            background: #205d76;
+            border-radius: 50%;
+        }
+
+        /* Contact Form */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact button {
+            padding: 10px 15px;
+            color: white;
+            background: #205d76;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact button:hover {
+            background: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABOUT ME</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <img src="WhatsApp Image 2024-11-27 at 01.39.39_a0adcaa2.jpg" alt="WhatsApp Image 2024-11-27 at 01.39.39_a0adcaa2">
+        <h2>Hello, I'm Dania Nurwirdani Binti Rohaizam</h2>
+        <p>I’m a Information Management with 7 Years of experience in IT, Web deveploment and Designer. Here, you’ll find a summary of my skills, experience, and how to contact me.</p>
+        <button class="btn">Download Resume</button>
+    </section>
+
+    <section class="section skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>SQL</li>
+            
+        </ul>
+    </section>
+
+    <section class="section timeline" id="experience">
+        <h2>Experience</h2>
+            <h3>IT Support Specialist - Global IT Solutions</h3>
+            <p>AUG 2020 - AUG 2024</p>
+            <p>Managed IT infrastructure, including configuring routers, firewalls, and VPNs to ensure secure and reliable connectivity.</p>
+        </div>
+            <h3>Full Stack Developer - CodeFactory</h3>
+            <p>JUNE 2018 - JUNE 2020</p>
+            <p>Improved code maintainability and scalability by implementing modular architecture and adhering to coding standards.</p>
+        </div>
+        <h2>Education</h2>
+            <h3>Diploma in Information Management</h3>
+            <p>Universiti Teknologi Mara Cawangan Kedah, 2015 - 2017</p>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dania Nurwirdani. All rights reserved.</p>
+    </footer>
+</body>
+</html>
